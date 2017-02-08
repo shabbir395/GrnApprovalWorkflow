@@ -136,6 +136,14 @@
                     <description locale="en"></description>
                 </descriptions>
             </topicDocumentation>
+            <topicDocumentation name="ACT18367652914861">
+                <labels>
+                    <label locale="en">IsAccessory</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
             <topicDocumentation name="EVT15107785706398">
                 <labels>
                     <label locale="en">Start</label>
@@ -253,17 +261,17 @@
                     <description locale="en"></description>
                 </descriptions>
             </topicDocumentation>
-            <topicDocumentation name="ACT18367652914861">
+            <topicDocumentation name="GTW18367720572238">
                 <labels>
-                    <label locale="en">IsAccessory</label>
+                    <label locale="en">isAccessoryOrFabric</label>
                 </labels>
                 <descriptions>
                     <description locale="en"></description>
                 </descriptions>
             </topicDocumentation>
-            <topicDocumentation name="GTW18367720572238">
+            <topicDocumentation name="GTW18497525620496">
                 <labels>
-                    <label locale="en">isAccessoryOrFabric</label>
+                    <label locale="en">is HD1</label>
                 </labels>
                 <descriptions>
                     <description locale="en"></description>
@@ -465,7 +473,7 @@
             </topicDocumentation>
             <topicDocumentation name="sf130">
                 <labels>
-                    <label locale="en"/>
+                    <label locale="en"></label>
                 </labels>
             </topicDocumentation>
             <topicDocumentation name="sf131">
@@ -484,6 +492,15 @@
                     <description locale="en"></description>
                 </descriptions>
             </topicDocumentation>
+            <topicDocumentation name="sf84">
+                <labels>
+                    <label locale="en"></label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf86"/>
         </topicDocumentations>
     </component>
 </processDocumentation>

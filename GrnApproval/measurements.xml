@@ -2,7 +2,7 @@
 <measurements xmlns="http://xmlns.oracle.com/bpm/analytics/measurement">
     <compositeDN>GrnApproval</compositeDN>
     <measurementElements>
-        <measurementElement enabled="true" type="COMPOSITE" name="GrnApproval">
+        <measurementElement name="GrnApproval" type="COMPOSITE" enabled="true">
             <elementSelection>INTERACTIVE</elementSelection>
             <elementStates>
                 <elementState>ALL</elementState>
