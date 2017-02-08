@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://www.example.org"
+            targetNamespace="http://www.example.org"
+            elementFormDefault="qualified">
+  <xsd:element name="EmailInput">
+    <xsd:annotation>
+      <xsd:documentation>
+        A sample element
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="emailAddress" type="xsd:string"/>
+        <xsd:element name="EmailSubject" type="xsd:string"/>
+        <xsd:element name="EmailBody" type="xsd:string"/>
+        <xsd:element name="EmailBodyOrg" type="xsd:string"/>
+        <xsd:element name="EmailBodyApprover" type="xsd:string"/>
+        <xsd:element name="rcvTransactionPerson" type="xsd:string"/>
+        <xsd:element name="OrganizationCode" type="xsd:decimal"/>
+        <xsd:element name="ItemCode" type="xsd:string"/>
+        <xsd:element name="PO_NUM" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

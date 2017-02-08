@@ -1,0 +1,21 @@
+<?binding.jca UpdateLineProcessedFlag_db.jca?>
+<wsdl:definitions name="UpdateLineProcessedFlag" targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/UpdateLineProcessedFlag" xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/UpdateLineProcessedFlag" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:top="http://xmlns.oracle.com/pcbpel/adapter/db/top/UpdateLineProcessedFlag">
+    <plt:partnerLinkType name="UpdateLineProcessedFlag_plt">
+        <plt:role name="UpdateLineProcessedFlag_role">
+            <plt:portType name="tns:UpdateLineProcessedFlag_ptt"/>
+        </plt:role>
+    </plt:partnerLinkType>
+    <wsdl:types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/UpdateLineProcessedFlag" schemaLocation="xsd/UpdateLineProcessedFlag_table.xsd"/>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="RcvShipmentLinesCollection_msg">
+        <wsdl:part name="RcvShipmentLinesCollection" element="top:RcvShipmentLinesCollection"/>
+    </wsdl:message>
+    <wsdl:portType name="UpdateLineProcessedFlag_ptt">
+        <wsdl:operation name="merge">
+            <wsdl:input message="tns:RcvShipmentLinesCollection_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

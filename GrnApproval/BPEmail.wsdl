@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="BPEmail"
+             targetNamespace="http://xmlns.oracle.com/GrnApprovalWorkflow/GrnApproval/BPEmail"
+             xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:client="http://xmlns.oracle.com/GrnApprovalWorkflow/GrnApproval/BPEmail"
+             xmlns:ns1="http://www.example.org"
+             xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/">
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	TYPE DEFINITION - List of services participating in this BPEL process
+	The default output of the BPEL designer uses strings as input and 
+	output to the BPEL Process. But you can define or import any XML 
+	Schema type and use them as part of the message types.
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->   
+	<wsdl:types>
+		<schema xmlns="http://www.w3.org/2001/XMLSchema">
+			<import namespace="http://xmlns.oracle.com/GrnApprovalWorkflow/GrnApproval/BPEmail" schemaLocation="xsd/BPEmail.xsd" />
+		</schema>
+		<schema xmlns="http://www.w3.org/2001/XMLSchema">
+			<import namespace="http://www.example.org" schemaLocation="xsd/email.xsd" />
+		</schema>
+	</wsdl:types>
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	MESSAGE TYPE DEFINITION - Definition of the message types used as 
+	part of the port type defintions
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->      
+	<wsdl:message name="BPEmailRequestMessage">
+		<wsdl:part name="payload" element="ns1:EmailInput" />
+	</wsdl:message>
+
+	<wsdl:message name="BPEmailResponseMessage">
+		<wsdl:part name="payload" element="client:processResponse"/>
+	</wsdl:message>
+
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	PORT TYPE DEFINITION - A port type groups a set of operations into
+	a logical service unit.
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<!-- portType implemented by the BPEmail BPEL process -->
+	<wsdl:portType name="BPEmail">
+		<wsdl:operation name="process">
+			<wsdl:input message="client:BPEmailRequestMessage"/>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<!-- portType implemented by the requester of BPEmail BPEL process
+	for asynchronous callback purposes
+	-->
+	<wsdl:portType name="BPEmailCallback">
+		<wsdl:operation name="processResponse">
+			<wsdl:input message="client:BPEmailResponseMessage"/>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	PARTNER LINK TYPE DEFINITION
+	the BPEmail partnerLinkType binds the provider and
+	requester portType into an asynchronous conversation.
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<plnk:partnerLinkType name="BPEmail">
+		<plnk:role name="BPEmailProvider">
+			<plnk:portType name="client:BPEmail"/>
+		</plnk:role>
+		<plnk:role name="BPEmailRequester">
+			<plnk:portType name="client:BPEmailCallback"/>
+		</plnk:role>
+	</plnk:partnerLinkType>
+</wsdl:definitions>

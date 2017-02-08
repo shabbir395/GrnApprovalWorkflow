@@ -1,0 +1,25 @@
+<?binding.jca GetOrgFromZone_db.jca?>
+<wsdl:definitions name="GetOrgFromZone" targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/GetOrgFromZone" xmlns:db="http://xmlns.oracle.com/pcbpel/adapter/db/GetOrgFromZone" xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/GetOrgFromZone" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/">
+    <plt:partnerLinkType name="GetOrgFromZone_plt">
+        <plt:role name="GetOrgFromZone_role">
+            <plt:portType name="tns:GetOrgFromZone_ptt"/>
+        </plt:role>
+    </plt:partnerLinkType>
+    <wsdl:types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/GetOrgFromZone" schemaLocation="xsd/GetOrgFromZone.xsd"/>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="GetOrgFromZoneInput_msg">
+        <wsdl:part name="GetOrgFromZoneInput_msg" element="db:GetOrgFromZoneInput"/>
+    </wsdl:message>
+    <wsdl:message name="GetOrgFromZoneOutputCollection_msg">
+        <wsdl:part name="GetOrgFromZoneOutputCollection" element="db:GetOrgFromZoneOutputCollection"/>
+    </wsdl:message>
+    <wsdl:portType name="GetOrgFromZone_ptt">
+        <wsdl:operation name="GetOrgFromZone">
+            <wsdl:input message="tns:GetOrgFromZoneInput_msg"/>
+            <wsdl:output message="tns:GetOrgFromZoneOutputCollection_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

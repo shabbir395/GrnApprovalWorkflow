@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?oracleBPM version="11.1.1.7.0.2.22" fileRevision="20120217"?>
+<processDocumentation xmlns="http://xmlns.oracle.com/bpm/taskMetadataService/processDocumentation">
+    <component name="GrnWorkflowProcess">
+        <topicDocumentations>
+            <topicDocumentation name="GrnWorkflowProcess">
+                <descriptions>
+                    <description locale="en">GrnWorkflowProcess</description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT1510859787598">
+                <labels>
+                    <label locale="en">UpdateLineReadyFlag</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT1510899077625">
+                <labels>
+                    <label locale="en">ReadOverallReadyStatus</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT15109813308980">
+                <labels>
+                    <label locale="en">ExtractReceiptData</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT15115580161186">
+                <labels>
+                    <label locale="en">GrnApproverTask</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT15117359670550">
+                <labels>
+                    <label locale="en">UpdateLineApprovalFlag_CaseApproved</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT1511783642045">
+                <labels>
+                    <label locale="en">UpdateLineApprovalFlag_CaseDisApproved</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT15177256159190">
+                <labels>
+                    <label locale="en">SaveApprover</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT15178271507468">
+                <labels>
+                    <label locale="en">UpdateLineProcessedFlag</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT15696881881265">
+                <labels>
+                    <label locale="en">EmailApproved</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT15697051343970">
+                <labels>
+                    <label locale="en">EmailDisApproved</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT16126980960251">
+                <labels>
+                    <label locale="en">GET_APPROVER_BY_ORG</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT16802472491864">
+                <labels>
+                    <label locale="en">ResetLineProcessedFlag</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT1707224245757">
+                <labels>
+                    <label locale="en">GetOrgFromZone</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT17072267670988">
+                <labels>
+                    <label locale="en">GetApproverFromOrg</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT17702130788995">
+                <labels>
+                    <label locale="en">CheckIfInspectionRequired</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT17752985812614">
+                <labels>
+                    <label locale="en">GetInspectionStatus</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="EVT15107785706398">
+                <labels>
+                    <label locale="en">Start</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="EVT15107785706483">
+                <labels>
+                    <label locale="en">End</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="GTW15109006511018">
+                <labels>
+                    <label locale="en">IsReceiptReadyForApproval</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW15117490959648">
+                <labels>
+                    <label locale="en">IsApproved</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW15695094150567">
+                <labels>
+                    <label locale="en">RecordsExists</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW16100581898983">
+                <labels>
+                    <label locale="en">IsNCL</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW16100592064439">
+                <labels>
+                    <label locale="en">IsNCPL</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW16100609778495">
+                <labels>
+                    <label locale="en">IsHTD</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW16100654428498">
+                <labels>
+                    <label locale="en">IsSpinning</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW16697275931693">
+                <labels>
+                    <label locale="en">isInspected</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW17072227080141">
+                <labels>
+                    <label locale="en">isZone</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW17149390964123">
+                <labels>
+                    <label locale="en">isWeaving</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW17293650803473">
+                <labels>
+                    <label locale="en">isPower</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW17702156051917">
+                <labels>
+                    <label locale="en">Inspection Required</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW18157516158185">
+                <labels>
+                    <label locale="en">isDyeing</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT18367652914861">
+                <labels>
+                    <label locale="en">IsAccessory</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW18367720572238">
+                <labels>
+                    <label locale="en">isAccessoryOrFabric</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf10"/>
+            <topicDocumentation name="sf5"/>
+            <topicDocumentation name="sf25"/>
+            <topicDocumentation name="sf11">
+                <labels>
+                    <label locale="en">WF is Ready</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf16">
+                <labels>
+                    <label locale="en">WF is not ready</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf12"/>
+            <topicDocumentation name="sf14"/>
+            <topicDocumentation name="sf15">
+                <labels>
+                    <label locale="en"></label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf18"/>
+            <topicDocumentation name="sf33"/>
+            <topicDocumentation name="sf21"/>
+            <topicDocumentation name="sf38"/>
+            <topicDocumentation name="sf65"/>
+            <topicDocumentation name="sf40">
+                <labels>
+                    <label locale="en">Yes</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf42"/>
+            <topicDocumentation name="sf28"/>
+            <topicDocumentation name="sf29"/>
+            <topicDocumentation name="sf30">
+                <labels>
+                    <label locale="en">Yes</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf32">
+                <labels>
+                    <label locale="en">No</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf37">
+                <labels>
+                    <label locale="en">No</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf47">
+                <labels>
+                    <label locale="en">Yes</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf49">
+                <labels>
+                    <label locale="en">No</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf48"/>
+            <topicDocumentation name="sf59">
+                <labels>
+                    <label locale="en">Yes</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf61">
+                <labels>
+                    <label locale="en">No</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf58"/>
+            <topicDocumentation name="sf54">
+                <labels>
+                    <label locale="en">Yes</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf63">
+                <labels>
+                    <label locale="en"></label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="sf67">
+                <labels>
+                    <label locale="en">Yes</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf70"/>
+            <topicDocumentation name="sf76"/>
+            <topicDocumentation name="sf115">
+                <labels>
+                    <label locale="en">No</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf118">
+                <labels>
+                    <label locale="en">Yes</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf74"/>
+            <topicDocumentation name="sf78">
+                <labels>
+                    <label locale="en">Yes</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf77"/>
+            <topicDocumentation name="sf79">
+                <labels>
+                    <label locale="en">Yes</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf81"/>
+            <topicDocumentation name="sf73"/>
+            <topicDocumentation name="sf82">
+                <labels>
+                    <label locale="en">Yes</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf140">
+                <labels>
+                    <label locale="en">Yes</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf142">
+                <labels>
+                    <label locale="en">No</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf45">
+                <labels>
+                    <label locale="en">No</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf130">
+                <labels>
+                    <label locale="en"/>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="sf131">
+                <labels>
+                    <label locale="en">Accessory</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf133">
+                <labels>
+                    <label locale="en">Fabric</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+        </topicDocumentations>
+    </component>
+</processDocumentation>

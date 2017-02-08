@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+   <entry key="XX_RECEIPT_APPROVERS:db_column_2">APPROVERS</entry>
+   <entry key="XX_RECEIPT_APPROVERS:db_column_1">ENTITY_ID</entry>
+   <entry key="XX_RECEIPT_APPROVERS:db_column_0">ENTITY</entry>
+   <entry key="XX_RECEIPT_APPROVERS.ENTITY_ID:db_column_not_null">false</entry>
+   <entry key="XX_RECEIPT_APPROVERS.APPROVERS:db_column_size">1000</entry>
+   <entry key="XX_RECEIPT_APPROVERS.RCV_TRANSACTION_PERSON:db_column_size">100</entry>
+   <entry key="XX_RECEIPT_APPROVERS:db_table_type">TABLE</entry>
+   <entry key="XX_RECEIPT_APPROVERS.ENTITY_ID:db_column_type">NUMBER</entry>
+   <entry key="XX_RECEIPT_APPROVERS.ENTITY:db_column_type">VARCHAR2</entry>
+   <entry key="return_single_result_set">false</entry>
+   <entry key="XX_RECEIPT_APPROVERS.RCV_TRANSACTION_PERSON:db_column_not_null">false</entry>
+   <entry key="XX_RECEIPT_APPROVERS.APPROVERS:db_column_type">VARCHAR2</entry>
+   <entry key="XX_RECEIPT_APPROVERS.ENTITY:db_column_not_null">false</entry>
+   <entry key="XX_RECEIPT_APPROVERS.ENTITY_ID:db_column_precision">0</entry>
+   <entry key="root_descriptor_alias">XX_RECEIPT_APPROVERS</entry>
+   <entry key="XX_RECEIPT_APPROVERS.ENTITY:db_column_size">100</entry>
+   <entry key="XX_RECEIPT_APPROVERS.RCV_TRANSACTION_PERSON:db_column_type">VARCHAR2</entry>
+   <entry key="XX_RECEIPT_APPROVERS.APPROVERS:db_column_not_null">false</entry>
+   <entry key="XX_RECEIPT_APPROVERS:db_column_3">RCV_TRANSACTION_PERSON</entry>
+</properties>

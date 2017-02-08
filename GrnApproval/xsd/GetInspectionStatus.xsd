@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/GetInspectionStatus" xmlns="http://xmlns.oracle.com/pcbpel/adapter/db/GetInspectionStatus" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="GetInspectionStatusInput" type="GetInspectionStatusInput"/>
+   <xs:complexType name="GetInspectionStatusInput">
+      <xs:sequence>
+         <xs:element name="shid" type="xs:decimal" nillable="true"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:element name="GetInspectionStatusOutputCollection" type="GetInspectionStatusOutputCollection"/>
+   <xs:complexType name="GetInspectionStatusOutputCollection">
+      <xs:sequence>
+         <xs:element name="GetInspectionStatusOutput" type="GetInspectionStatusOutput" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="GetInspectionStatusOutput">
+      <xs:sequence>
+         <xs:element name="transaction_id" type="xs:decimal" nillable="true"/>
+         <xs:element name="shipment_header_id" type="xs:decimal" nillable="true"/>
+         <xs:element name="shipment_line_id" type="xs:decimal" nillable="true"/>
+         <xs:element name="attribute5" type="xs:string" nillable="true"/>
+         <xs:element name="attribute6" type="xs:string" nillable="true"/>
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>

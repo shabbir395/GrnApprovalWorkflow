@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<process name="BPELProcessSaveApprover" targetNamespace="http://xmlns.oracle.com/GrnApprovalWorkflow/GrnApproval/BPELProcessSaveApprover" xmlns="http://schemas.xmlsoap.org/ws/2003/03/business-process/" xmlns:client="http://xmlns.oracle.com/GrnApprovalWorkflow/GrnApproval/BPELProcessSaveApprover" xmlns:ora="http://schemas.oracle.com/xpath/extension" xmlns:bpelx="http://schemas.oracle.com/bpel/extension" xmlns:bpws="http://schemas.xmlsoap.org/ws/2003/03/business-process/" xmlns:ns1="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/SaveApprover" xmlns:bpel2="http://docs.oasis-open.org/wsbpel/2.0/process/executable" id="BpPrc0">
+
+    <!-- 
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        PARTNERLINKS                                                      
+        List of services participating in this BPEL process               
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    --> 
+  <partnerLinks>
+    <!-- 
+      The 'client' role represents the requester of this service. It is 
+      used for callback. The location and correlation information associated
+      with the client role are automatically set using WS-Addressing.
+    -->
+    <partnerLink name="bpelprocesssaveapprover_client" partnerLinkType="client:BPELProcessSaveApprover" myRole="BPELProcessSaveApproverProvider"/>
+    <partnerLink name="SaveApprover" partnerLinkType="ns1:SaveApprover_plt" partnerRole="SaveApprover_role"/>
+  </partnerLinks>
+
+  <!-- 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      VARIABLES                                                        
+      List of messages and XML documents used within this BPEL process 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  -->
+  <variables>
+    <!-- Reference to the message passed as input during initiation -->
+    <variable name="inputVariable" messageType="client:BPELProcessSaveApproverRequestMessage"/>
+
+    <!-- Reference to the message that will be returned to the requester-->
+    <variable name="outputVariable" messageType="client:BPELProcessSaveApproverResponseMessage"/>
+    <variable name="InvokeSaveAppr_VAR" messageType="ns1:XxReceiptApproverHistoryCollection_msg"/>
+  </variables>
+
+  <!-- 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     ORCHESTRATION LOGIC                                               
+     Set of activities coordinating the flow of messages across the    
+     services integrated within this business process                  
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  -->
+  <sequence name="main" id="BpSeq0">
+
+    <!-- Receive input from requestor. (Note: This maps to operation defined in BPELProcessSaveApprover.wsdl) -->
+    <receive name="receiveInput" partnerLink="bpelprocesssaveapprover_client" portType="client:BPELProcessSaveApprover" operation="process" variable="inputVariable" createInstance="yes" id="BpRcv0"/>
+    <assign name="Transform1" id="BpAss0">
+      <bpelx:annotation>
+        <bpelx:pattern>transformation</bpelx:pattern>
+      </bpelx:annotation>
+      <copy>
+        <from expression="ora:doXSLTransformForDoc('xsl/Transformation_5.xsl', $inputVariable.payload)"/>
+        <to variable="InvokeSaveAppr_VAR" part="XxReceiptApproverHistoryCollection"/>
+      </copy>
+    </assign>
+    <invoke name="InvokeSaveAppr" inputVariable="InvokeSaveAppr_VAR" partnerLink="SaveApprover" portType="ns1:SaveApprover_ptt" operation="merge" bpelx:invokeAsDetail="no" id="BpInv0"/>
+    <!-- Generate reply to synchronous request -->
+    <reply name="replyOutput" partnerLink="bpelprocesssaveapprover_client" portType="client:BPELProcessSaveApprover" operation="process" variable="outputVariable" id="BpRpl0"/>
+  </sequence>
+</process><!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  Oracle JDeveloper BPEL Designer 
+  
+  Created: Thu Jan 21 13:25:36 PKT 2016
+  Author:  kaka
+  Type: BPEL 1.1 Process
+  Purpose: Synchronous BPEL Process
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->

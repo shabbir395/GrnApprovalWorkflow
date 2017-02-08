@@ -1,0 +1,13 @@
+<adapter-config name="ReadBpmWfReadyFlag" adapter="Database Adapter" wsdlLocation="ReadBpmWfReadyFlag.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory location="eis/DB/PROD" UIConnectionName="PROD" adapterRef=""/>
+  <endpoint-interaction portType="ReadBpmWfReadyFlag_ptt" operation="ReadBpmWfReadyFlag">
+    <interaction-spec className="oracle.tip.adapter.db.DBPureSQLInteractionSpec">
+      <property name="SqlString" value=" SELECT (CASE  when COUNT(*) > 0 then  'READY' else 'NOT_READY' end) attribute10   FROM RCV_SHIPMENT_LINES  WHERE SHIPMENT_HEADER_ID = #shid and attribute1 is not null"/>
+      <property name="GetActiveUnitOfWork" value="false"/>
+    </interaction-spec>
+    <input/>
+    <output/>
+  </endpoint-interaction>
+
+</adapter-config>

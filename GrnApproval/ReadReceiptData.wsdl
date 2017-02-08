@@ -1,0 +1,25 @@
+<?binding.jca ReadReceiptData_db.jca?>
+<wsdl:definitions name="ReadReceiptData" targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/ReadReceiptData" xmlns:db="http://xmlns.oracle.com/pcbpel/adapter/db/ReadReceiptData" xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/ReadReceiptData" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/">
+    <plt:partnerLinkType name="ReadReceiptData_plt">
+        <plt:role name="ReadReceiptData_role">
+            <plt:portType name="tns:ReadReceiptData_ptt"/>
+        </plt:role>
+    </plt:partnerLinkType>
+    <wsdl:types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/ReadReceiptData" schemaLocation="xsd/ReadReceiptData.xsd"/>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="ReadReceiptDataInput_msg">
+        <wsdl:part name="ReadReceiptDataInput_msg" element="db:ReadReceiptDataInput"/>
+    </wsdl:message>
+    <wsdl:message name="ReadReceiptDataOutputCollection_msg">
+        <wsdl:part name="ReadReceiptDataOutputCollection" element="db:ReadReceiptDataOutputCollection"/>
+    </wsdl:message>
+    <wsdl:portType name="ReadReceiptData_ptt">
+        <wsdl:operation name="ReadReceiptData">
+            <wsdl:input message="tns:ReadReceiptDataInput_msg"/>
+            <wsdl:output message="tns:ReadReceiptDataOutputCollection_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

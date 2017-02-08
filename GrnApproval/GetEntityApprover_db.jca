@@ -1,0 +1,14 @@
+<adapter-config name="GetEntityApprover" adapter="Database Adapter" wsdlLocation="GetEntityApprover.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory location="eis/DB/PROD" UIConnectionName="PROD" adapterRef=""/>
+  <endpoint-interaction portType="GetEntityApprover_ptt" operation="GetEntityApproverSelect">
+    <interaction-spec className="oracle.tip.adapter.db.DBReadInteractionSpec">
+      <property name="DescriptorName" value="GetEntityApprover.XxReceiptApprovers"/>
+      <property name="QueryName" value="GetEntityApproverSelect"/>
+      <property name="MappingsMetaDataURL" value="GetEntityApprover-or-mappings.xml"/>
+      <property name="ReturnSingleResultSet" value="false"/>
+      <property name="GetActiveUnitOfWork" value="false"/>
+    </interaction-spec>
+  </endpoint-interaction>
+
+</adapter-config>

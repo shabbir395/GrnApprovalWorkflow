@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.64.93"
+          id="XxReceiptApprovers" Package="UIGrnApprover_GrnApproverTask"
+          BeanClass="UIGrnApprover_GrnApproverTask.XxReceiptApprovers"
+          isJavaBased="false">
+  <Attribute Name="entity" IsUpdateable="0" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace"
+                  Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/GetEntityApprover"/>
+        <Property Name="maxLength" Value="100"/>
+        <Property Name="nextSibling" Value="entityId"/>
+        <Property Name="minOccurs" Value="0"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Entity"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="true"/>
+        <Property Name="originalName" Value="entity"/>
+        <Property Name="targetNamespace"
+                  Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/GetEntityApprover"/>
+        <Property Name="type" Value="java.lang.String"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="entityId" IsUpdateable="0" Type="java.math.BigDecimal">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace"
+                  Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/GetEntityApprover"/>
+        <Property Name="nextSibling" Value="approvers"/>
+        <Property Name="minOccurs" Value="1"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Entity Id"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="true"/>
+        <Property Name="originalName" Value="entityId"/>
+        <Property Name="targetNamespace"
+                  Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/GetEntityApprover"/>
+        <Property Name="type" Value="java.math.BigDecimal"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="approvers" IsUpdateable="0" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace"
+                  Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/GetEntityApprover"/>
+        <Property Name="maxLength" Value="1000"/>
+        <Property Name="nextSibling" Value="rcvTransactionPerson"/>
+        <Property Name="minOccurs" Value="0"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Approvers"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="true"/>
+        <Property Name="originalName" Value="approvers"/>
+        <Property Name="targetNamespace"
+                  Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/GetEntityApprover"/>
+        <Property Name="type" Value="java.lang.String"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="rcvTransactionPerson" IsUpdateable="0"
+             Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="maxLength" Value="100"/>
+        <Property Name="minOccurs" Value="0"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Rcv Transaction Person"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="true"/>
+        <Property Name="originalName" Value="rcvTransactionPerson"/>
+        <Property Name="targetNamespace"
+                  Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/GetEntityApprover"/>
+        <Property Name="type" Value="java.lang.String"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+</JavaBean>

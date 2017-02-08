@@ -1,0 +1,21 @@
+<?binding.jca UpdateLineDISAPPROVED_db.jca?>
+<wsdl:definitions name="UpdateLineDISAPPROVED" targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/UpdateLineDISAPPROVED" xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/UpdateLineDISAPPROVED" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:top="http://xmlns.oracle.com/pcbpel/adapter/db/top/UpdateLineDISAPPROVED">
+    <plt:partnerLinkType name="UpdateLineDISAPPROVED_plt">
+        <plt:role name="UpdateLineDISAPPROVED_role">
+            <plt:portType name="tns:UpdateLineDISAPPROVED_ptt"/>
+        </plt:role>
+    </plt:partnerLinkType>
+    <wsdl:types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/UpdateLineDISAPPROVED" schemaLocation="xsd/UpdateLineDISAPPROVED_table.xsd"/>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="RcvShipmentLinesCollection_msg">
+        <wsdl:part name="RcvShipmentLinesCollection" element="top:RcvShipmentLinesCollection"/>
+    </wsdl:message>
+    <wsdl:portType name="UpdateLineDISAPPROVED_ptt">
+        <wsdl:operation name="update">
+            <wsdl:input message="tns:RcvShipmentLinesCollection_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,21 @@
+<?binding.jca UpdFlagCaseDisapproved_db.jca?>
+<wsdl:definitions name="UpdFlagCaseDisapproved" targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/UpdFlagCaseDisapproved" xmlns:db="http://xmlns.oracle.com/pcbpel/adapter/db/UpdFlagCaseDisapproved" xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/UpdFlagCaseDisapproved" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/">
+    <plt:partnerLinkType name="UpdFlagCaseDisapproved_plt">
+        <plt:role name="UpdFlagCaseDisapproved_role">
+            <plt:portType name="tns:UpdFlagCaseDisapproved_ptt"/>
+        </plt:role>
+    </plt:partnerLinkType>
+    <wsdl:types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/UpdFlagCaseDisapproved" schemaLocation="xsd/UpdFlagCaseDisapproved.xsd"/>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="UpdFlagCaseDisapprovedInput_msg">
+        <wsdl:part name="UpdFlagCaseDisapprovedInput_msg" element="db:UpdFlagCaseDisapprovedInput"/>
+    </wsdl:message>
+    <wsdl:portType name="UpdFlagCaseDisapproved_ptt">
+        <wsdl:operation name="UpdFlagCaseDisapproved">
+            <wsdl:input message="tns:UpdFlagCaseDisapprovedInput_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

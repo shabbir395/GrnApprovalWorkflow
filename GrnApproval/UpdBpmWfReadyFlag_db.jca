@@ -1,0 +1,13 @@
+<adapter-config name="UpdBpmWfReadyFlag" adapter="Database Adapter" wsdlLocation="UpdBpmWfReadyFlag.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory location="eis/DB/PROD" UIConnectionName="PROD" adapterRef=""/>
+  <endpoint-interaction portType="UpdBpmWfReadyFlag_ptt" operation="UpdBpmWfReadyFlag">
+    <interaction-spec className="oracle.tip.adapter.db.DBStoredProcedureInteractionSpec">
+      <property name="SchemaName" value="APPS"/>
+      <property name="PackageName" value="PROC_GRN"/>
+      <property name="ProcedureName" value="SET_BPM_READY_FLAG"/>
+      <property name="GetActiveUnitOfWork" value="false"/>
+    </interaction-spec>
+  </endpoint-interaction>
+
+</adapter-config>

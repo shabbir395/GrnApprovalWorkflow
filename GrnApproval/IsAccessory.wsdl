@@ -1,0 +1,25 @@
+<?binding.jca IsAccessory_db.jca?>
+<wsdl:definitions name="IsAccessory" targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/IsAccessory" xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/IsAccessory" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:top="http://xmlns.oracle.com/pcbpel/adapter/db/top/IsAccessory">
+    <plt:partnerLinkType name="IsAccessory_plt">
+        <plt:role name="IsAccessory_role">
+            <plt:portType name="tns:IsAccessory_ptt"/>
+        </plt:role>
+    </plt:partnerLinkType>
+    <wsdl:types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/IsAccessory" schemaLocation="xsd/IsAccessory_table.xsd"/>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="IsAccessorySelect_inputParameters">
+        <wsdl:part name="IsAccessorySelect_inputParameters" element="top:IsAccessorySelect_slidInputParameters"/>
+    </wsdl:message>
+    <wsdl:message name="RcvShipmentLinesCollection_msg">
+        <wsdl:part name="RcvShipmentLinesCollection" element="top:RcvShipmentLinesCollection"/>
+    </wsdl:message>
+    <wsdl:portType name="IsAccessory_ptt">
+        <wsdl:operation name="IsAccessorySelect">
+            <wsdl:input message="tns:IsAccessorySelect_inputParameters"/>
+            <wsdl:output message="tns:RcvShipmentLinesCollection_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

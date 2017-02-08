@@ -1,0 +1,25 @@
+<?binding.jca GetInspectionStatus_db.jca?>
+<wsdl:definitions name="GetInspectionStatus" targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/GetInspectionStatus" xmlns:db="http://xmlns.oracle.com/pcbpel/adapter/db/GetInspectionStatus" xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/GetInspectionStatus" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/">
+    <plt:partnerLinkType name="GetInspectionStatus_plt">
+        <plt:role name="GetInspectionStatus_role">
+            <plt:portType name="tns:GetInspectionStatus_ptt"/>
+        </plt:role>
+    </plt:partnerLinkType>
+    <wsdl:types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/GetInspectionStatus" schemaLocation="xsd/GetInspectionStatus.xsd"/>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="GetInspectionStatusInput_msg">
+        <wsdl:part name="GetInspectionStatusInput_msg" element="db:GetInspectionStatusInput"/>
+    </wsdl:message>
+    <wsdl:message name="GetInspectionStatusOutputCollection_msg">
+        <wsdl:part name="GetInspectionStatusOutputCollection" element="db:GetInspectionStatusOutputCollection"/>
+    </wsdl:message>
+    <wsdl:portType name="GetInspectionStatus_ptt">
+        <wsdl:operation name="GetInspectionStatus">
+            <wsdl:input message="tns:GetInspectionStatusInput_msg"/>
+            <wsdl:output message="tns:GetInspectionStatusOutputCollection_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

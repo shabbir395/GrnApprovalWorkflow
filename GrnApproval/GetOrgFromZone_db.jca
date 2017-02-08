@@ -1,0 +1,13 @@
+<adapter-config name="GetOrgFromZone" adapter="Database Adapter" wsdlLocation="GetOrgFromZone.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory location="eis/DB/PROD" UIConnectionName="PROD" adapterRef=""/>
+  <endpoint-interaction portType="GetOrgFromZone_ptt" operation="GetOrgFromZone">
+    <interaction-spec className="oracle.tip.adapter.db.DBPureSQLInteractionSpec">
+      <property name="SqlString" value="SELECT  ood.organization_id,        ood.organization_name,        ood.ORGANIZATION_CODE   FROM    org_organization_definitions ood  WHERE   ood.ORGANIZATION_CODE = #org_code"/>
+      <property name="GetActiveUnitOfWork" value="false"/>
+    </interaction-spec>
+    <input/>
+    <output/>
+  </endpoint-interaction>
+
+</adapter-config>

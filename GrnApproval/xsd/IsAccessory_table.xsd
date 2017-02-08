@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/IsAccessory" xmlns="http://xmlns.oracle.com/pcbpel/adapter/db/top/IsAccessory" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="RcvShipmentLinesCollection" type="RcvShipmentLinesCollection"/>
+   <xs:complexType name="RcvShipmentLinesCollection">
+      <xs:sequence>
+         <xs:element name="RcvShipmentLines" type="RcvShipmentLines" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="RcvShipmentLines">
+      <xs:sequence>
+         <xs:element name="shipmentLineId" type="xs:decimal"/>
+         <xs:element name="mtlItemSubInventories" type="MtlItemSubInventories" minOccurs="0" nillable="true"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="MtlItemSubInventories">
+      <xs:sequence>
+         <xs:element name="inventoryItemId" type="xs:decimal"/>
+         <xs:element name="secondaryInventory" minOccurs="0">
+            <xs:simpleType>
+               <xs:restriction base="xs:string">
+                  <xs:maxLength value="10"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:element name="IsAccessorySelect_slidInputParameters" type="IsAccessorySelect_slid"/>
+   <xs:complexType name="IsAccessorySelect_slid">
+      <xs:sequence>
+         <xs:element name="slid" type="xs:decimal" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.64.93"
+          id="ReadReceiptDataOutputCollection"
+          Package="UIGrnApprover_GrnApproverTask"
+          BeanClass="UIGrnApprover_GrnApproverTask.ReadReceiptDataOutputCollection"
+          isJavaBased="false">
+  <Attribute Name="user_id" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="minOccurs" Value="1"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="User Id"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="user_id"/>
+        <Property Name="targetNamespace"
+                  Value="http://xmlns.oracle.com/pcbpel/adapter/db/ReadReceiptData"/>
+        <Property Name="type" Value="java.lang.String"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <AccessorAttribute id="ReadReceiptDataOutput" IsCollection="true"
+                     BeanClass="UIGrnApprover_GrnApproverTask.ReadReceiptDataOutput"
+                     CollectionBeanClass="UIGrnApprover_GrnApproverTask.ReadReceiptDataOutput_ReadReceiptDataOutput_Operations">
+    <Properties>
+      <Property Name="minOccurs" Value="0"/>
+      <Property Name="maxOccurs" Value="2147483640"/>
+      <Property Name="LABEL" Value="Read Receipt Data Output"/>
+      <Property Name="nillable" Value="false"/>
+      <Property Name="originalName" Value="ReadReceiptDataOutput"/>
+      <Property Name="targetNamespace"
+                Value="http://xmlns.oracle.com/pcbpel/adapter/db/ReadReceiptData"/>
+    </Properties>
+  </AccessorAttribute>
+</JavaBean>

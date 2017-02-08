@@ -1,0 +1,14 @@
+<adapter-config name="UpdateLineDISAPPROVED" adapter="Database Adapter" wsdlLocation="UpdateLineDISAPPROVED.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory location="eis/DB/PROD" UIConnectionName="PROD" adapterRef=""/>
+  <endpoint-interaction portType="UpdateLineDISAPPROVED_ptt" operation="update">
+    <interaction-spec className="oracle.tip.adapter.db.DBWriteInteractionSpec">
+      <property name="DescriptorName" value="UpdateLineDISAPPROVED.RcvShipmentLines"/>
+      <property name="DmlType" value="update"/>
+      <property name="MappingsMetaDataURL" value="UpdateLineDISAPPROVED-or-mappings.xml"/>
+      <property name="DetectOmissions" value="true"/>
+      <property name="GetActiveUnitOfWork" value="false"/>
+    </interaction-spec>
+  </endpoint-interaction>
+
+</adapter-config>

@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/ReadReceiptData" xmlns="http://xmlns.oracle.com/pcbpel/adapter/db/ReadReceiptData" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="ReadReceiptDataInput" type="ReadReceiptDataInput"/>
+   <xs:complexType name="ReadReceiptDataInput">
+      <xs:sequence>
+         <xs:element name="SHID" type="xs:decimal" nillable="true"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:element name="ReadReceiptDataOutputCollection" type="ReadReceiptDataOutputCollection"/>
+   <xs:complexType name="ReadReceiptDataOutputCollection">
+      <xs:sequence>
+         <xs:element name="ReadReceiptDataOutput" type="ReadReceiptDataOutput" minOccurs="0" maxOccurs="unbounded"/>
+         <xs:element name="user_id" type="xs:string"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="ReadReceiptDataOutput">
+      <xs:sequence>
+         <xs:element name="GRNNo" type="xs:decimal" nillable="true"/>
+         <xs:element name="ORGANIZATION_NAME" type="xs:string" nillable="true"/>
+         <xs:element name="ORG_ID" type="xs:decimal" nillable="true"/>
+         <xs:element name="ORG" type="xs:string" nillable="true"/>
+         <xs:element name="ATTRIBUTE3" type="xs:string" nillable="true"/>
+         <xs:element name="USER_NAME" type="xs:string" nillable="true"/>
+         <xs:element name="EMAIL_ADDRESS" type="xs:string" nillable="true"/>
+         <xs:element name="TRANSACTION_ID" type="xs:decimal" nillable="true"/>
+         <xs:element name="SHIPMENT_HEADER_ID" type="xs:decimal" nillable="true"/>
+         <xs:element name="DC_NO" type="xs:string" nillable="true"/>
+         <xs:element name="DC_DATE" type="xs:dateTime" nillable="true"/>
+         <xs:element name="IGP_NO" type="xs:string" nillable="true"/>
+         <xs:element name="IGP_DATE" type="xs:string" nillable="true"/>
+         <xs:element name="NO_OF_CARTONS" type="xs:decimal" nillable="true"/>
+         <xs:element name="BUILTY_NO" type="xs:string" nillable="true"/>
+         <xs:element name="PACKING_SLIP" type="xs:string" nillable="true"/>
+         <xs:element name="WAYBILL_AIRBILL_NUM" type="xs:string" nillable="true"/>
+         <xs:element name="GRN_DATE" type="xs:dateTime" nillable="true"/>
+         <xs:element name="PO_NUM" type="xs:string" nillable="true"/>
+         <xs:element name="VEH_NO" type="xs:string" nillable="true"/>
+         <xs:element name="VENDOR_SITE_CODE" type="xs:string" nillable="true"/>
+         <xs:element name="CREATION_DATE" type="xs:dateTime" nillable="true"/>
+         <xs:element name="DESCRIPTION" type="xs:string" nillable="true"/>
+         <xs:element name="UOM" type="xs:string" nillable="true"/>
+         <xs:element name="CARRIER" type="xs:string" nillable="true"/>
+         <xs:element name="Item_Code" type="xs:string" nillable="true"/>
+         <xs:element name="desc" type="xs:string" nillable="true"/>
+         <xs:element name="ITMID" type="xs:decimal" nillable="true"/>
+         <xs:element name="ORGID" type="xs:decimal" nillable="true"/>
+         <xs:element name="QUANTITYRECEIVED" type="xs:decimal" nillable="true"/>
+         <xs:element name="PRIMARY_UOM_CODE" type="xs:string" nillable="true"/>
+         <xs:element name="DEPTLINE" type="xs:string" nillable="true"/>
+         <xs:element name="GATEPASS_NO" type="xs:string" nillable="true"/>
+         <xs:element name="PO_HEADER_ID" type="xs:decimal" nillable="true"/>
+         <xs:element name="REMARKS" type="xs:string" nillable="true"/>
+         <xs:element name="PO_LINE_ID" type="xs:decimal" nillable="true"/>
+         <xs:element name="SupplierName" type="xs:string" nillable="true"/>
+         <xs:element name="DEPT" type="xs:string" nillable="true"/>
+         <xs:element name="COMMENTS" type="xs:string" nillable="true"/>
+         <xs:element name="SHIPMENT_LINE_ID" type="xs:decimal" nillable="true"/>
+         <xs:element name="DEPARTMENT" type="xs:string" nillable="true"/>
+         <xs:element name="SET_OF_BOOKS_ID" type="xs:decimal" nillable="true"/>
+         <xs:element name="NOTE_TO_RECEIVER" type="xs:string" nillable="true"/>
+         <xs:element name="PO_EMAIL_ADDRESS" type="xs:string" nillable="true"/>
+         <xs:element name="PO_PERSON_NAME" type="xs:string" nillable="true"/>
+         <xs:element name="QUANTITY_RECEIVED" type="xs:decimal" nillable="true"/>
+         <xs:element name="QUANTITY_ACCEPT" type="xs:decimal" nillable="true"/>
+         <xs:element name="QUANTITY_REJECT" type="xs:decimal" nillable="true"/>
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>

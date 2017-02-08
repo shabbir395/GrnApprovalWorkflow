@@ -1,0 +1,14 @@
+<adapter-config name="IsAccessory" adapter="Database Adapter" wsdlLocation="IsAccessory.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory location="eis/DB/PROD" UIConnectionName="PROD" adapterRef=""/>
+  <endpoint-interaction portType="IsAccessory_ptt" operation="IsAccessorySelect">
+    <interaction-spec className="oracle.tip.adapter.db.DBReadInteractionSpec">
+      <property name="DescriptorName" value="IsAccessory.RcvShipmentLines"/>
+      <property name="QueryName" value="IsAccessorySelect"/>
+      <property name="MappingsMetaDataURL" value="IsAccessory-or-mappings.xml"/>
+      <property name="ReturnSingleResultSet" value="false"/>
+      <property name="GetActiveUnitOfWork" value="false"/>
+    </interaction-spec>
+  </endpoint-interaction>
+
+</adapter-config>

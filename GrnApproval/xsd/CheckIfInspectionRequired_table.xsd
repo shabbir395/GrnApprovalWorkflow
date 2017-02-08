@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/CheckIfInspectionRequired" xmlns="http://xmlns.oracle.com/pcbpel/adapter/db/top/CheckIfInspectionRequired" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="PoLineLocationsAllCollection" type="PoLineLocationsAllCollection"/>
+   <xs:complexType name="PoLineLocationsAllCollection">
+      <xs:sequence>
+         <xs:element name="PoLineLocationsAll" type="PoLineLocationsAll" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="PoLineLocationsAll">
+      <xs:sequence>
+         <xs:element name="lineLocationId" type="xs:decimal"/>
+         <xs:element name="poHeaderId" type="xs:decimal"/>
+         <xs:element name="poLineId" type="xs:decimal"/>
+         <xs:element name="inspectionRequiredFlag" minOccurs="0" nillable="true">
+            <xs:simpleType>
+               <xs:restriction base="xs:string">
+                  <xs:maxLength value="1"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="receivingRoutingId" type="xs:decimal" minOccurs="0" nillable="true"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:element name="CheckIfInspectionRequiredSelect_po_line_id_po_header_idInputParameters" type="CheckIfInspectionRequiredSelect_po_line_id_po_header_id"/>
+   <xs:complexType name="CheckIfInspectionRequiredSelect_po_line_id_po_header_id">
+      <xs:sequence>
+         <xs:element name="po_line_id" type="xs:decimal" minOccurs="1" maxOccurs="1"/>
+         <xs:element name="po_header_id" type="xs:decimal" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>

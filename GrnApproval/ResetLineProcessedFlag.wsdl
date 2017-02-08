@@ -1,0 +1,21 @@
+<?binding.jca ResetLineProcessedFlag_db.jca?>
+<wsdl:definitions name="ResetLineProcessedFlag" targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/ResetLineProcessedFlag" xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/ResetLineProcessedFlag" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:top="http://xmlns.oracle.com/pcbpel/adapter/db/top/ResetLineProcessedFlag">
+    <plt:partnerLinkType name="ResetLineProcessedFlag_plt">
+        <plt:role name="ResetLineProcessedFlag_role">
+            <plt:portType name="tns:ResetLineProcessedFlag_ptt"/>
+        </plt:role>
+    </plt:partnerLinkType>
+    <wsdl:types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/ResetLineProcessedFlag" schemaLocation="xsd/ResetLineProcessedFlag_table.xsd"/>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="RcvShipmentLinesCollection_msg">
+        <wsdl:part name="RcvShipmentLinesCollection" element="top:RcvShipmentLinesCollection"/>
+    </wsdl:message>
+    <wsdl:portType name="ResetLineProcessedFlag_ptt">
+        <wsdl:operation name="merge">
+            <wsdl:input message="tns:RcvShipmentLinesCollection_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,14 @@
+<adapter-config name="CheckIfInspectionRequired" adapter="Database Adapter" wsdlLocation="CheckIfInspectionRequired.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory location="eis/DB/PROD" UIConnectionName="PROD" adapterRef=""/>
+  <endpoint-interaction portType="CheckIfInspectionRequired_ptt" operation="CheckIfInspectionRequiredSelect">
+    <interaction-spec className="oracle.tip.adapter.db.DBReadInteractionSpec">
+      <property name="DescriptorName" value="CheckIfInspectionRequired.PoLineLocationsAll"/>
+      <property name="QueryName" value="CheckIfInspectionRequiredSelect"/>
+      <property name="MappingsMetaDataURL" value="CheckIfInspectionRequired-or-mappings.xml"/>
+      <property name="ReturnSingleResultSet" value="false"/>
+      <property name="GetActiveUnitOfWork" value="false"/>
+    </interaction-spec>
+  </endpoint-interaction>
+
+</adapter-config>

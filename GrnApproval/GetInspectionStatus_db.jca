@@ -1,0 +1,13 @@
+<adapter-config name="GetInspectionStatus" adapter="Database Adapter" wsdlLocation="GetInspectionStatus.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory location="eis/DB/PROD" UIConnectionName="PROD" adapterRef=""/>
+  <endpoint-interaction portType="GetInspectionStatus_ptt" operation="GetInspectionStatus">
+    <interaction-spec className="oracle.tip.adapter.db.DBPureSQLInteractionSpec">
+      <property name="SqlString" value="select transaction_id, shipment_header_id, shipment_line_id,attribute5, attribute6 from rcv_transactions where shipment_header_id = #shid and (attribute6 = 'APPROVE' or attribute6 = 'APPROVED')"/>
+      <property name="GetActiveUnitOfWork" value="false"/>
+    </interaction-spec>
+    <input/>
+    <output/>
+  </endpoint-interaction>
+
+</adapter-config>

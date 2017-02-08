@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="BP_UpdateLineDisApp"
+             targetNamespace="http://xmlns.oracle.com/GrnApprovalWorkflow/GrnApproval/BP_UpdateLineDisApp"
+             xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:client="http://xmlns.oracle.com/GrnApprovalWorkflow/GrnApproval/BP_UpdateLineDisApp"
+             xmlns:ns1="http://xmlns.oracle.com/pcbpel/adapter/db/ReadReceiptData"
+             xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/">
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	TYPE DEFINITION - List of services participating in this BPEL process
+	The default output of the BPEL designer uses strings as input and 
+	output to the BPEL Process. But you can define or import any XML 
+	Schema type and use them as part of the message types.
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->   
+	<wsdl:types>
+		<schema xmlns="http://www.w3.org/2001/XMLSchema">
+			<import namespace="http://xmlns.oracle.com/GrnApprovalWorkflow/GrnApproval/BP_UpdateLineDisApp" schemaLocation="xsd/BP_UpdateLineDisApp.xsd" />
+		</schema>
+		<schema xmlns="http://www.w3.org/2001/XMLSchema">
+			<import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/ReadReceiptData" schemaLocation="xsd/ReadReceiptData.xsd" />
+		</schema>
+	</wsdl:types>
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	MESSAGE TYPE DEFINITION - Definition of the message types used as 
+	part of the port type defintions
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->      
+	<wsdl:message name="BP_UpdateLineDisAppRequestMessage">
+		<wsdl:part name="payload" element="ns1:ReadReceiptDataOutputCollection" />
+	</wsdl:message>
+	<wsdl:message name="BP_UpdateLineDisAppResponseMessage">
+		<wsdl:part name="payload" element="client:processResponse"/>
+	</wsdl:message>
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	PORT TYPE DEFINITION - A port type groups a set of operations into
+	a logical service unit.
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+	<!-- portType implemented by the BP_UpdateLineDisApp BPEL process -->
+	<wsdl:portType name="BP_UpdateLineDisApp">
+		<wsdl:operation name="process">
+			<wsdl:input  message="client:BP_UpdateLineDisAppRequestMessage" />
+			<wsdl:output message="client:BP_UpdateLineDisAppResponseMessage"/>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	PARTNER LINK TYPE DEFINITION
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
+	<plnk:partnerLinkType name="BP_UpdateLineDisApp">
+		<plnk:role name="BP_UpdateLineDisAppProvider">
+			<plnk:portType name="client:BP_UpdateLineDisApp"/>
+		</plnk:role>
+	</plnk:partnerLinkType>
+</wsdl:definitions>

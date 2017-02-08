@@ -1,0 +1,25 @@
+<?binding.jca GetEntityApprover_db.jca?>
+<wsdl:definitions name="GetEntityApprover" targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/GetEntityApprover" xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/GetEntityApprover" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:top="http://xmlns.oracle.com/pcbpel/adapter/db/top/GetEntityApprover">
+    <plt:partnerLinkType name="GetEntityApprover_plt">
+        <plt:role name="GetEntityApprover_role">
+            <plt:portType name="tns:GetEntityApprover_ptt"/>
+        </plt:role>
+    </plt:partnerLinkType>
+    <wsdl:types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/GetEntityApprover" schemaLocation="xsd/GetEntityApprover_table.xsd"/>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="GetEntityApproverSelect_inputParameters">
+        <wsdl:part name="GetEntityApproverSelect_inputParameters" element="top:GetEntityApproverSelect_entity_nameInputParameters"/>
+    </wsdl:message>
+    <wsdl:message name="XxReceiptApproversCollection_msg">
+        <wsdl:part name="XxReceiptApproversCollection" element="top:XxReceiptApproversCollection"/>
+    </wsdl:message>
+    <wsdl:portType name="GetEntityApprover_ptt">
+        <wsdl:operation name="GetEntityApproverSelect">
+            <wsdl:input message="tns:GetEntityApproverSelect_inputParameters"/>
+            <wsdl:output message="tns:XxReceiptApproversCollection_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

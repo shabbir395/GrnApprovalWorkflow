@@ -1,0 +1,13 @@
+<adapter-config name="ReadReceiptData" adapter="Database Adapter" wsdlLocation="ReadReceiptData.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory location="eis/DB/PROD" UIConnectionName="PROD" adapterRef=""/>
+  <endpoint-interaction portType="ReadReceiptData_ptt" operation="ReadReceiptData">
+    <interaction-spec className="oracle.tip.adapter.db.DBPureSQLInteractionSpec">
+      <property name="SqlString" value="SELECT RD.*,        RD.quantityreceived QUANTITY_RECEIVED,        (SELECT max(QUANTITY)           FROM RCV_TRANSACTIONS rt          WHERE     rt.SHIPMENT_HEADER_ID = RD.SHIPMENT_HEADER_ID                AND TRANSACTION_TYPE = 'ACCEPT'                AND RD.shipment_line_id = rt.shipment_line_id)           quantity_accept,        (rd.QuantityReceived         - (SELECT max(QUANTITY)              FROM RCV_TRANSACTIONS rt             WHERE     SHIPMENT_HEADER_ID = RD.SHIPMENT_HEADER_ID                   AND TRANSACTION_TYPE = 'ACCEPT'                   AND RD.shipment_line_id = rt.shipment_line_id))           quantity_REJECT   FROM XX_RECEIPT_DATA RD  WHERE RD.shipment_header_id = #SHID"/>
+      <property name="GetActiveUnitOfWork" value="false"/>
+    </interaction-spec>
+    <input/>
+    <output/>
+  </endpoint-interaction>
+
+</adapter-config>

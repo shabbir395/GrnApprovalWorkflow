@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/UpdFlagCaseApproved" xmlns="http://xmlns.oracle.com/pcbpel/adapter/db/UpdFlagCaseApproved" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="UpdFlagCaseApprovedInput" type="UpdFlagCaseApprovedInput"/>
+   <xs:complexType name="UpdFlagCaseApprovedInput">
+      <xs:sequence>
+         <xs:element name="SHID" type="xs:decimal" nillable="true"/>
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>

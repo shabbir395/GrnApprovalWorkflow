@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.64.93"
+          id="UIGrnApprover_GrnApproverTask"
+          BeanClass="UIGrnApprover_GrnApproverTask" isJavaBased="false">
+  <MethodAccessor IsCollection="false"
+                  Type="UIGrnApprover_GrnApproverTask.getTaskDetails"
+                  BeanClass="UIGrnApprover_GrnApproverTask.getTaskDetails"
+                  id="getTaskDetails" ReturnNodeName="Return">
+    <ParameterInfo id="bpmWorklistContext" Type="java.lang.String"
+                   isStructured="false"/>
+    <ParameterInfo id="bpmWorklistTaskId" Type="java.lang.String"
+                   isStructured="false"/>
+    <ParameterInfo id="bpmWorklistTaskVersion" Type="java.lang.String"
+                   isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

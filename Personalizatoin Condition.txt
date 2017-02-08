@@ -1,0 +1,5 @@
+((:DESTINATION_TYPE_DSP = 'Inventory')
+and
+(nvl(APPS.PROC_GRN.getFlag(:RCV_TRANSACTION.SHIPMENT_LINE_ID),'NOT_APPROVED') <> 'APPROVED'))
+and 
+(:system.record_status != 'QUERY')

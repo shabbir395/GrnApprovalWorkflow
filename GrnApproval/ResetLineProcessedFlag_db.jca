@@ -1,0 +1,15 @@
+<adapter-config name="ResetLineProcessedFlag" adapter="Database Adapter" wsdlLocation="ResetLineProcessedFlag.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory location="eis/DB/PROD" UIConnectionName="PROD" adapterRef=""/>
+  <endpoint-interaction portType="ResetLineProcessedFlag_ptt" operation="merge">
+    <interaction-spec className="oracle.tip.adapter.db.DBWriteInteractionSpec">
+      <property name="DescriptorName" value="ResetLineProcessedFlag.RcvShipmentLines"/>
+      <property name="DmlType" value="merge"/>
+      <property name="MappingsMetaDataURL" value="ResetLineProcessedFlag-or-mappings.xml"/>
+      <property name="OptimizeMerge" value="true"/>
+      <property name="DetectOmissions" value="true"/>
+      <property name="GetActiveUnitOfWork" value="false"/>
+    </interaction-spec>
+  </endpoint-interaction>
+
+</adapter-config>

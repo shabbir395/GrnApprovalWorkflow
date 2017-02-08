@@ -1,0 +1,25 @@
+<?binding.jca ReadBpmWfReadyFlag_db.jca?>
+<wsdl:definitions name="ReadBpmWfReadyFlag" targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/ReadBpmWfReadyFlag" xmlns:db="http://xmlns.oracle.com/pcbpel/adapter/db/ReadBpmWfReadyFlag" xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/ReadBpmWfReadyFlag" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/">
+    <plt:partnerLinkType name="ReadBpmWfReadyFlag_plt">
+        <plt:role name="ReadBpmWfReadyFlag_role">
+            <plt:portType name="tns:ReadBpmWfReadyFlag_ptt"/>
+        </plt:role>
+    </plt:partnerLinkType>
+    <wsdl:types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/ReadBpmWfReadyFlag" schemaLocation="xsd/ReadBpmWfReadyFlag.xsd"/>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="ReadBpmWfReadyFlagInput_msg">
+        <wsdl:part name="ReadBpmWfReadyFlagInput_msg" element="db:ReadBpmWfReadyFlagInput"/>
+    </wsdl:message>
+    <wsdl:message name="ReadBpmWfReadyFlagOutputCollection_msg">
+        <wsdl:part name="ReadBpmWfReadyFlagOutputCollection" element="db:ReadBpmWfReadyFlagOutputCollection"/>
+    </wsdl:message>
+    <wsdl:portType name="ReadBpmWfReadyFlag_ptt">
+        <wsdl:operation name="ReadBpmWfReadyFlag">
+            <wsdl:input message="tns:ReadBpmWfReadyFlagInput_msg"/>
+            <wsdl:output message="tns:ReadBpmWfReadyFlagOutputCollection_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

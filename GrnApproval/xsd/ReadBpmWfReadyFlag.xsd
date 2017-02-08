@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/ReadBpmWfReadyFlag" xmlns="http://xmlns.oracle.com/pcbpel/adapter/db/ReadBpmWfReadyFlag" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="ReadBpmWfReadyFlagInput" type="ReadBpmWfReadyFlagInput"/>
+   <xs:complexType name="ReadBpmWfReadyFlagInput">
+      <xs:sequence>
+         <xs:element name="shid" type="xs:decimal" nillable="true"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:element name="ReadBpmWfReadyFlagOutputCollection" type="ReadBpmWfReadyFlagOutputCollection"/>
+   <xs:complexType name="ReadBpmWfReadyFlagOutputCollection">
+      <xs:sequence>
+         <xs:element name="ReadBpmWfReadyFlagOutput" type="ReadBpmWfReadyFlagOutput" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="ReadBpmWfReadyFlagOutput">
+      <xs:sequence>
+         <xs:element name="attribute10" type="xs:string" nillable="true"/>
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>

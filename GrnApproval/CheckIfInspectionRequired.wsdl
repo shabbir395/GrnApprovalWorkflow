@@ -1,0 +1,25 @@
+<?binding.jca CheckIfInspectionRequired_db.jca?>
+<wsdl:definitions name="CheckIfInspectionRequired" targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/CheckIfInspectionRequired" xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/CheckIfInspectionRequired" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:top="http://xmlns.oracle.com/pcbpel/adapter/db/top/CheckIfInspectionRequired">
+    <plt:partnerLinkType name="CheckIfInspectionRequired_plt">
+        <plt:role name="CheckIfInspectionRequired_role">
+            <plt:portType name="tns:CheckIfInspectionRequired_ptt"/>
+        </plt:role>
+    </plt:partnerLinkType>
+    <wsdl:types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/CheckIfInspectionRequired" schemaLocation="xsd/CheckIfInspectionRequired_table.xsd"/>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="CheckIfInspectionRequiredSelect_inputParameters">
+        <wsdl:part name="CheckIfInspectionRequiredSelect_inputParameters" element="top:CheckIfInspectionRequiredSelect_po_line_id_po_header_idInputParameters"/>
+    </wsdl:message>
+    <wsdl:message name="PoLineLocationsAllCollection_msg">
+        <wsdl:part name="PoLineLocationsAllCollection" element="top:PoLineLocationsAllCollection"/>
+    </wsdl:message>
+    <wsdl:portType name="CheckIfInspectionRequired_ptt">
+        <wsdl:operation name="CheckIfInspectionRequiredSelect">
+            <wsdl:input message="tns:CheckIfInspectionRequiredSelect_inputParameters"/>
+            <wsdl:output message="tns:PoLineLocationsAllCollection_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>
