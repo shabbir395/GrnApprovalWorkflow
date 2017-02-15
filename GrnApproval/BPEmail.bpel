@@ -143,13 +143,6 @@
                                     part="EmailPayload"
                                     query="/EmailPayload/ns2:To"/>
                             </copy>
-                            <copy>
-                                <from variable="inputVariable" part="payload"
-                                      query="/ns1:EmailInput/ns1:emailAddress"/>
-                                <to variable="varNotificationReq"
-                                    part="EmailPayload"
-                                    query="/EmailPayload/ns2:To"/>
-                            </copy>
                         </assign>
                     </case>
                     <case condition="bpws:getVariableData('inputVariable','payload','/ns1:EmailInput/ns1:OrganizationCode') = 108">
@@ -192,7 +185,7 @@
                                     query="/EmailPayload/ns2:FromUserName"/>
                             </copy>
                             <copy>
-                                <from expression="string('grn_ncl@nishat.net;')"/>
+                                <from expression="string('grn_ncpl@nishat.net;')"/>
                                 <to variable="varNotificationReq"
                                     part="EmailPayload"
                                     query="/EmailPayload/ns2:Bcc"/>

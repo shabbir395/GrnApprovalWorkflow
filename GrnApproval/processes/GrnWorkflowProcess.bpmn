@@ -880,7 +880,6 @@
                     <ns5:OracleExtensions/>
                 </extensionElements>
                 <sourceRef>DOReceiptData</sourceRef>
-                <sourceRef>entityId</sourceRef>
                 <sourceRef>rcv_transaction_person</sourceRef>
                 <sourceRef>approvers</sourceRef>
                 <targetRef>emailInput</targetRef>
@@ -932,14 +931,14 @@
                             <ns5:DataAssignment operation="copy"/>
                         </ns5:OracleExtensions>
                     </extensionElements>
-                    <from xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataObject('entityId')
+                    <from xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:ns="http://xmlns.oracle.com/pcbpel/adapter/db/ReadReceiptData" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataObject('DOReceiptData')/ns:ReadReceiptDataOutput[1]/ns:Item_Code
                         <extensionElements>
                             <ns5:OracleExtensions>
-                                <ns5:Expression mode="xpath"/>
+                                <ns5:Expression mode="simple"/>
                             </ns5:OracleExtensions>
                         </extensionElements>
                     </from>
-                    <to xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:ns="http://www.example.org" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataInput('emailInput')/ns:OrganizationCode
+                    <to xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:ns="http://www.example.org" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataInput('emailInput')/ns:ItemCode
                         <extensionElements>
                             <ns5:OracleExtensions>
                                 <ns5:Expression mode="simple"/>
@@ -953,14 +952,14 @@
                             <ns5:DataAssignment operation="copy"/>
                         </ns5:OracleExtensions>
                     </extensionElements>
-                    <from xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:ns="http://xmlns.oracle.com/pcbpel/adapter/db/ReadReceiptData" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataObject('DOReceiptData')/ns:ReadReceiptDataOutput[1]/ns:Item_Code
+                    <from xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:ns="http://xmlns.oracle.com/pcbpel/adapter/db/ReadReceiptData" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataObject('DOReceiptData')/ns:ReadReceiptDataOutput[1]/ns:ORG_ID
                         <extensionElements>
                             <ns5:OracleExtensions>
                                 <ns5:Expression mode="simple"/>
                             </ns5:OracleExtensions>
                         </extensionElements>
                     </from>
-                    <to xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:ns="http://www.example.org" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataInput('emailInput')/ns:ItemCode
+                    <to xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:ns="http://www.example.org" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataInput('emailInput')/ns:OrganizationCode
                         <extensionElements>
                             <ns5:OracleExtensions>
                                 <ns5:Expression mode="simple"/>
