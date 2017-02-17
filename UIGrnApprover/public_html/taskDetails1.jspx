@@ -590,7 +590,7 @@
                     </af:column>
                     <af:column sortProperty="#{bindings.ReadReceiptDataOutput.hints.PO_NUM.name}"
                                sortable="false"
-                               headerText="#{bindings.ReadReceiptDataOutput.hints.PO_NUM.label}"
+                               headerText="PO Number"
                                id="c37" width="135">
                       <af:inputText value="#{row.bindings.PO_NUM.inputValue}"
                                     label="#{bindings.ReadReceiptDataOutput.hints.PO_NUM.label}"
@@ -641,7 +641,7 @@
                     </af:column>
                     <af:column sortProperty="#{bindings.ReadReceiptDataOutput.hints.QUANTITYRECEIVED.name}"
                                sortable="false"
-                               headerText="#{bindings.ReadReceiptDataOutput.hints.QUANTITYRECEIVED.label}"
+                               headerText="Quantity Received"
                                id="c9" width="110">
                       <af:outputText value="#{row.QUANTITYRECEIVED}" id="ot30"/>
                     </af:column>
@@ -779,7 +779,7 @@
                     </af:column>
                     <af:column sortProperty="#{bindings.ReadReceiptDataOutput.hints.DESCRIPTION.name}"
                                sortable="false"
-                               headerText="#{bindings.ReadReceiptDataOutput.hints.DESCRIPTION.label}"
+                               headerText="Description"
                                id="c8" width="135">
                       <af:inputText value="#{row.bindings.DESCRIPTION.inputValue}"
                                     label="#{bindings.ReadReceiptDataOutput.hints.DESCRIPTION.label}"
