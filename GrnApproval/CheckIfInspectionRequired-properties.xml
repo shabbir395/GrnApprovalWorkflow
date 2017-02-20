@@ -10,8 +10,8 @@
    <entry key="PO_LINE_LOCATIONS_ALL:db_column_115">GLOBAL_ATTRIBUTE20</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.LAST_UPDATE_LOGIN:db_column_scale">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL:db_column_114">GLOBAL_ATTRIBUTE19</entry>
-   <entry key="PO_LINE_LOCATIONS_ALL.SHIPMENT_CLOSED_DATE:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL:db_column_113">GLOBAL_ATTRIBUTE18</entry>
+   <entry key="PO_LINE_LOCATIONS_ALL.SHIPMENT_CLOSED_DATE:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.GLOBAL_ATTRIBUTE19:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.USSGL_TRANSACTION_CODE:db_column_type">VARCHAR2</entry>
    <entry key="PO_LINE_LOCATIONS_ALL:db_column_112">GLOBAL_ATTRIBUTE17</entry>
@@ -33,9 +33,9 @@
    <entry key="PO_LINE_LOCATIONS_ALL:db_column_105">GLOBAL_ATTRIBUTE10</entry>
    <entry key="PO_LINE_LOCATIONS_ALL:db_column_104">GLOBAL_ATTRIBUTE9</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.GLOBAL_ATTRIBUTE6:db_column_type">VARCHAR2</entry>
-   <entry key="PO_LINE_LOCATIONS_ALL.AMOUNT_CANCELLED:db_column_precision">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL:db_column_103">GLOBAL_ATTRIBUTE8</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.UNIT_MEAS_LOOKUP_CODE:db_column_type">VARCHAR2</entry>
+   <entry key="PO_LINE_LOCATIONS_ALL.AMOUNT_CANCELLED:db_column_precision">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL:db_column_102">GLOBAL_ATTRIBUTE7</entry>
    <entry key="PO_LINE_LOCATIONS_ALL:db_column_101">GLOBAL_ATTRIBUTE6</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.PRICE_DISCOUNT:db_column_precision">0</entry>
@@ -47,8 +47,8 @@
    <entry key="PO_LINE_LOCATIONS_ALL.AMOUNT_BILLED:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.FREIGHT_TERMS_LOOKUP_CODE:db_column_type">VARCHAR2</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.CLOSED_BY:db_column_type">NUMBER</entry>
-   <entry key="PO_LINE_LOCATIONS_ALL.MATCHING_BASIS:db_column_size">30</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.QUANTITY:db_column_scale">0</entry>
+   <entry key="PO_LINE_LOCATIONS_ALL.MATCHING_BASIS:db_column_size">30</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.ATTRIBUTE7:db_column_size">150</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.FROM_HEADER_ID:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.TAX_ATTRIBUTE_UPDATE_CODE:db_column_type">VARCHAR2</entry>
@@ -91,8 +91,8 @@
    <entry key="PO_LINE_LOCATIONS_ALL.RETROACTIVE_DATE:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.ATTRIBUTE11:db_column_size">150</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.LAST_UPDATE_DATE:db_column_type">DATE</entry>
-   <entry key="PO_LINE_LOCATIONS_ALL.MANUAL_PRICE_CHANGE_FLAG:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL:db_table_type">TABLE</entry>
+   <entry key="PO_LINE_LOCATIONS_ALL.MANUAL_PRICE_CHANGE_FLAG:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.AMOUNT_REJECTED:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.TAX_CODE_ID:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.GLOBAL_ATTRIBUTE8:db_column_type">VARCHAR2</entry>
@@ -105,8 +105,8 @@
    <entry key="PO_LINE_LOCATIONS_ALL.SOURCE_SHIPMENT_ID:db_column_precision">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.WORK_APPROVER_ID:db_column_precision">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.SECONDARY_QUANTITY_SHIPPED:db_column_type">NUMBER</entry>
-   <entry key="PO_LINE_LOCATIONS_ALL.OUTSOURCED_ASSEMBLY:db_column_type">NUMBER</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.QUANTITY_FINANCED:db_column_scale">0</entry>
+   <entry key="PO_LINE_LOCATIONS_ALL.OUTSOURCED_ASSEMBLY:db_column_type">NUMBER</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.ATTRIBUTE9:db_column_size">150</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.GLOBAL_ATTRIBUTE14:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.GLOBAL_ATTRIBUTE18:db_column_not_null">false</entry>
@@ -119,8 +119,8 @@
    <entry key="PO_LINE_LOCATIONS_ALL.MANUAL_PRICE_CHANGE_FLAG:db_column_size">1</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.ORIGINAL_SHIPMENT_ID:db_column_type">NUMBER</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.DAYS_EARLY_RECEIPT_ALLOWED:db_column_type">NUMBER</entry>
-   <entry key="PO_LINE_LOCATIONS_ALL.DROP_SHIP_FLAG:db_column_size">1</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.AMOUNT_RECEIVED:db_column_type">NUMBER</entry>
+   <entry key="PO_LINE_LOCATIONS_ALL.DROP_SHIP_FLAG:db_column_size">1</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.PROMISED_DATE:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.LINE_LOCATION_ID:db_column_scale">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.GLOBAL_ATTRIBUTE17:db_column_type">VARCHAR2</entry>
@@ -131,8 +131,8 @@
    <entry key="PO_LINE_LOCATIONS_ALL.RECEIPT_REQUIRED_FLAG:db_column_type">VARCHAR2</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.SHIP_TO_LOCATION_ID:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.PROGRAM_APPLICATION_ID:db_column_scale">0</entry>
-   <entry key="PO_LINE_LOCATIONS_ALL.QUANTITY_RECOUPED:db_column_type">NUMBER</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.ATTRIBUTE15:db_column_size">150</entry>
+   <entry key="PO_LINE_LOCATIONS_ALL.QUANTITY_RECOUPED:db_column_type">NUMBER</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.VALUE_BASIS:db_column_size">25</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.REQUEST_ID:db_column_precision">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.CALCULATE_TAX_FLAG:db_column_size">1</entry>
@@ -195,8 +195,8 @@
    <entry key="return_single_result_set">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.PO_RELEASE_ID:db_column_type">NUMBER</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.PROGRAM_APPLICATION_ID:db_column_type">NUMBER</entry>
-   <entry key="PO_LINE_LOCATIONS_ALL.TRANSACTION_FLOW_HEADER_ID:db_column_scale">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.GLOBAL_ATTRIBUTE13:db_column_not_null">false</entry>
+   <entry key="PO_LINE_LOCATIONS_ALL.TRANSACTION_FLOW_HEADER_ID:db_column_scale">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.GLOBAL_ATTRIBUTE12:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.GLOBAL_ATTRIBUTE11:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.GLOBAL_ATTRIBUTE10:db_column_not_null">false</entry>
@@ -222,8 +222,8 @@
    <entry key="PO_LINE_LOCATIONS_ALL.FREIGHT_TERMS_LOOKUP_CODE:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.CANCEL_REASON:db_column_type">VARCHAR2</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.RETAINAGE_WITHHELD_AMOUNT:db_column_not_null">false</entry>
-   <entry key="PO_LINE_LOCATIONS_ALL.CLOSED_FOR_RECEIVING_DATE:db_column_type">DATE</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.ATTRIBUTE_CATEGORY:db_column_type">VARCHAR2</entry>
+   <entry key="PO_LINE_LOCATIONS_ALL.CLOSED_FOR_RECEIVING_DATE:db_column_type">DATE</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.LEAD_TIME:db_column_precision">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.SECONDARY_QUANTITY_ACCEPTED:db_column_scale">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.QUANTITY_RECEIVED:db_column_type">NUMBER</entry>
@@ -257,8 +257,8 @@
    <entry key="PO_LINE_LOCATIONS_ALL.TAXABLE_FLAG:db_column_type">VARCHAR2</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.NOTE_TO_RECEIVER:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.REQUEST_ID:db_column_scale">0</entry>
-   <entry key="PO_LINE_LOCATIONS_ALL.FINAL_MATCH_FLAG:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.RECEIPT_REQUIRED_FLAG:db_column_size">1</entry>
+   <entry key="PO_LINE_LOCATIONS_ALL.FINAL_MATCH_FLAG:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.QUANTITY:db_column_type">NUMBER</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.ATTRIBUTE14:db_column_type">VARCHAR2</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.PO_LINE_ID:db_column_precision">0</entry>
@@ -271,8 +271,8 @@
    <entry key="PO_LINE_LOCATIONS_ALL.BID_PAYMENT_ID:db_column_scale">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.ALLOW_SUBSTITUTE_RECEIPTS_FLAG:db_column_type">VARCHAR2</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.TRANSACTION_FLOW_HEADER_ID:db_column_precision">0</entry>
-   <entry key="PO_LINE_LOCATIONS_ALL.RETAINAGE_RELEASED_AMOUNT:db_column_precision">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.LAST_UPDATED_BY:db_column_not_null">true</entry>
+   <entry key="PO_LINE_LOCATIONS_ALL.RETAINAGE_RELEASED_AMOUNT:db_column_precision">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.FIRM_STATUS_LOOKUP_CODE:db_column_size">25</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.QUANTITY_BILLED:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.PO_HEADER_ID:db_column_type">NUMBER</entry>
@@ -359,8 +359,8 @@
    <entry key="PO_LINE_LOCATIONS_ALL.USSGL_TRANSACTION_CODE:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.CANCEL_REASON:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.GLOBAL_ATTRIBUTE7:db_column_type">VARCHAR2</entry>
-   <entry key="PO_LINE_LOCATIONS_ALL.OUTSOURCED_ASSEMBLY:db_column_precision">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.ALLOW_SUBSTITUTE_RECEIPTS_FLAG:db_column_not_null">false</entry>
+   <entry key="PO_LINE_LOCATIONS_ALL.OUTSOURCED_ASSEMBLY:db_column_precision">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.AMOUNT_RECEIVED:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.MATCH_OPTION:db_column_size">25</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.GLOBAL_ATTRIBUTE10:db_column_type">VARCHAR2</entry>
@@ -375,8 +375,8 @@
    <entry key="PO_LINE_LOCATIONS_ALL.GLOBAL_ATTRIBUTE5:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.GLOBAL_ATTRIBUTE9:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.GLOBAL_ATTRIBUTE8:db_column_not_null">false</entry>
-   <entry key="PO_LINE_LOCATIONS_ALL.CLOSED_FOR_RECEIVING_DATE:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.SECONDARY_QUANTITY_REJECTED:db_column_not_null">false</entry>
+   <entry key="PO_LINE_LOCATIONS_ALL.CLOSED_FOR_RECEIVING_DATE:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.UNIT_OF_MEASURE_CLASS:db_column_size">25</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.DROP_SHIP_FLAG:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.SALES_ORDER_UPDATE_DATE:db_column_not_null">false</entry>
@@ -460,13 +460,13 @@
    <entry key="PO_LINE_LOCATIONS_ALL.QUANTITY_RECOUPED:db_column_scale">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.ORG_ID:db_column_type">NUMBER</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.TERMS_ID:db_column_type">NUMBER</entry>
-   <entry key="PO_LINE_LOCATIONS_ALL.ORIGINAL_SHIPMENT_ID:db_column_scale">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.AMOUNT_SHIPPED:db_column_scale">0</entry>
+   <entry key="PO_LINE_LOCATIONS_ALL.ORIGINAL_SHIPMENT_ID:db_column_scale">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL:db_column_99">GLOBAL_ATTRIBUTE4</entry>
    <entry key="PO_LINE_LOCATIONS_ALL:db_column_98">GLOBAL_ATTRIBUTE3</entry>
-   <entry key="PO_LINE_LOCATIONS_ALL.LCM_FLAG:db_column_type">VARCHAR2</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.SHIP_TO_ORGANIZATION_ID:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL:db_column_97">GLOBAL_ATTRIBUTE2</entry>
+   <entry key="PO_LINE_LOCATIONS_ALL.LCM_FLAG:db_column_type">VARCHAR2</entry>
    <entry key="PO_LINE_LOCATIONS_ALL:db_column_96">GLOBAL_ATTRIBUTE1</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.DAYS_LATE_RECEIPT_ALLOWED:db_column_precision">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL:db_column_95">GLOBAL_ATTRIBUTE_CATEGORY</entry>
@@ -480,8 +480,8 @@
    <entry key="PO_LINE_LOCATIONS_ALL:db_column_90">CLOSED_REASON</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.ENCUMBERED_DATE:db_column_type">DATE</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.FROM_LINE_ID:db_column_scale">0</entry>
-   <entry key="PO_LINE_LOCATIONS_ALL.BID_PAYMENT_ID:db_column_precision">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.TERMS_ID:db_column_precision">0</entry>
+   <entry key="PO_LINE_LOCATIONS_ALL.BID_PAYMENT_ID:db_column_precision">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.PROGRAM_UPDATE_DATE:db_column_type">DATE</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.UDA_TEMPLATE_ID:db_column_not_null">false</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.CHANGE_PROMISED_DATE_REASON:db_column_type">VARCHAR2</entry>
@@ -517,8 +517,8 @@
    <entry key="PO_LINE_LOCATIONS_ALL.SHIPMENT_NUM:db_column_scale">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL:db_column_70">ENFORCE_SHIP_TO_LOCATION_CODE</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.QUANTITY_ACCEPTED:db_column_not_null">false</entry>
-   <entry key="PO_LINE_LOCATIONS_ALL.MATCHING_BASIS:db_column_type">VARCHAR2</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.ATTRIBUTE7:db_column_type">VARCHAR2</entry>
+   <entry key="PO_LINE_LOCATIONS_ALL.MATCHING_BASIS:db_column_type">VARCHAR2</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.GLOBAL_ATTRIBUTE20:db_column_size">150</entry>
    <entry key="PO_LINE_LOCATIONS_ALL:db_column_69">QTY_RCV_EXCEPTION_CODE</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.DAYS_EARLY_RECEIPT_ALLOWED:db_column_not_null">false</entry>
@@ -562,8 +562,8 @@
    <entry key="PO_LINE_LOCATIONS_ALL.ENCUMBER_NOW:db_column_size">1</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.SECONDARY_QUANTITY_SHIPPED:db_column_precision">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.SHIPMENT_TYPE:db_column_size">25</entry>
-   <entry key="PO_LINE_LOCATIONS_ALL.QUANTITY_RECOUPED:db_column_precision">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.CLOSED_CODE:db_column_type">VARCHAR2</entry>
+   <entry key="PO_LINE_LOCATIONS_ALL.QUANTITY_RECOUPED:db_column_precision">0</entry>
    <entry key="PO_LINE_LOCATIONS_ALL.FROM_LINE_ID:db_column_type">NUMBER</entry>
    <entry key="PO_LINE_LOCATIONS_ALL:db_column_49">ATTRIBUTE1</entry>
    <entry key="PO_LINE_LOCATIONS_ALL:db_column_48">ATTRIBUTE_CATEGORY</entry>

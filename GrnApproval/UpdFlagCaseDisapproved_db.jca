@@ -1,6 +1,6 @@
 <adapter-config name="UpdFlagCaseDisapproved" adapter="Database Adapter" wsdlLocation="UpdFlagCaseDisapproved.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
   
-  <connection-factory location="eis/Apps/prod" UIConnectionName="PROD" adapterRef=""/>
+  <connection-factory location="eis/DB/PROD" UIConnectionName="PROD" adapterRef=""/>
   <endpoint-interaction portType="UpdFlagCaseDisapproved_ptt" operation="UpdFlagCaseDisapproved">
     <interaction-spec className="oracle.tip.adapter.db.DBPureSQLInteractionSpec">
       <property name="SqlString" value="update rcv_shipment_lines set attribute1 = 'BPM_WORKFLOW_DISAPPROVED' where shipment_header_id = #SHID"/>
