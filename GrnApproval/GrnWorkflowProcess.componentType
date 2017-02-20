@@ -64,12 +64,12 @@
              ui:wsdlLocation="GetInspectionStatus.wsdl">
     <interface.wsdl interface="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/GetInspectionStatus#wsdl.interface(GetInspectionStatus_ptt)"/>
   </reference>
-  <reference name="Services.Externals.ReadReceiptData.reference"
-             ui:wsdlLocation="ReadReceiptData.wsdl">
-    <interface.wsdl interface="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/ReadReceiptData#wsdl.interface(ReadReceiptData_ptt)"/>
-  </reference>
   <reference name="Services.Externals.IsAccessory.reference"
              ui:wsdlLocation="IsAccessory.wsdl">
     <interface.wsdl interface="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/IsAccessory#wsdl.interface(IsAccessory_ptt)"/>
+  </reference>
+  <reference name="Services.Externals.ReadReceiptData.reference"
+             ui:wsdlLocation="ReadReceiptData.wsdl">
+    <interface.wsdl interface="http://xmlns.oracle.com/pcbpel/adapter/db/GrnApprovalWorkflow/GrnApproval/ReadReceiptData#wsdl.interface(ReadReceiptData_ptt)"/>
   </reference>
 </componentType>
