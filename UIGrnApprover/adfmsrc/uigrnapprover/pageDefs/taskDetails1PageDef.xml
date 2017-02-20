@@ -329,6 +329,8 @@
           <Item Value="DEPARTMENT"/>
           <Item Value="ORG_ID"/>
           <Item Value="QUANTITYRECEIVED"/>
+          <Item Value="CURRENCY_CODE"/>
+          <Item Value="UNITPRICE"/>
         </AttrNames>
       </nodeDefinition>
     </tree>

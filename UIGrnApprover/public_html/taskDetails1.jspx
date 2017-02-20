@@ -621,13 +621,13 @@
                     </af:column>
                     <af:column sortProperty="#{bindings.ReadReceiptDataOutput.hints.DESCRIPTION.name}"
                                sortable="false"
-                               headerText="#{bindings.ReadReceiptDataOutput.hints.DESCRIPTION.label}"
+                               headerText="Description"
                                id="c5" width="258">
                       <af:outputText value="#{row.DESCRIPTION}" id="ot31"/>
                     </af:column>
                     <af:column sortProperty="#{bindings.ReadReceiptDataOutput.hints.UOM.name}"
                                sortable="false"
-                               headerText="#{bindings.ReadReceiptDataOutput.hints.UOM.label}"
+                               headerText="UoM"
                                id="c12" width="81">
                       <af:inputText value="#{row.bindings.UOM.inputValue}"
                                     label="#{bindings.ReadReceiptDataOutput.hints.UOM.label}"
@@ -653,9 +653,15 @@
                                width="135">
                       <af:outputText value="#{row.QUANTITY_ACCEPT}" id="ot25"/>
                     </af:column>
+                    <af:column id="c45" headerText="Unit Price">
+                      <af:outputText value="#{row.UNITPRICE}" id="ot28"/>
+                    </af:column>
+                    <af:column id="c44" width="135" headerText="Currency Code">
+                      <af:outputText value="#{row.CURRENCY_CODE}" id="ot27"/>
+                    </af:column>
                     <af:column sortProperty="#{bindings.ReadReceiptDataOutput.hints.IGP_DATE.name}"
                                sortable="false"
-                               headerText="#{bindings.ReadReceiptDataOutput.hints.IGP_DATE.label}"
+                               headerText="IGP Date"
                                id="c21" width="135">
                       <af:inputText value="#{row.bindings.IGP_DATE.inputValue}"
                                     label="#{bindings.ReadReceiptDataOutput.hints.IGP_DATE.label}"
@@ -947,7 +953,7 @@
                     </af:column>
                     <af:column sortProperty="#{bindings.ReadReceiptDataOutput.hints.COMMENTS.name}"
                                sortable="false"
-                               headerText="#{bindings.ReadReceiptDataOutput.hints.COMMENTS.label}"
+                               headerText="Comments"
                                id="c26" width="135">
                       <af:inputText value="#{row.bindings.COMMENTS.inputValue}"
                                     label="#{bindings.ReadReceiptDataOutput.hints.COMMENTS.label}"
@@ -975,7 +981,7 @@
                     </af:column>
                     <af:column sortProperty="#{bindings.ReadReceiptDataOutput.hints.NOTE_TO_RECEIVER.name}"
                                sortable="false"
-                               headerText="#{bindings.ReadReceiptDataOutput.hints.NOTE_TO_RECEIVER.label}"
+                               headerText="Note to Receiver"
                                id="c34" width="135">
                       <af:inputText value="#{row.bindings.NOTE_TO_RECEIVER.inputValue}"
                                     label="#{bindings.ReadReceiptDataOutput.hints.NOTE_TO_RECEIVER.label}"
@@ -986,14 +992,6 @@
                                     id="it31" readOnly="true">
                         <f:validator binding="#{row.bindings.NOTE_TO_RECEIVER.validator}"/>
                       </af:inputText>
-                    </af:column>
-                    <af:column id="c44" width="135">
-                      <af:panelLabelAndMessage label="#{bindings.ReadReceiptDataOutput.hints.ORG.label}"
-                                               id="plam1">
-                        <af:outputText value="#{row.ORG}" id="ot27"/>
-                      </af:panelLabelAndMessage>
-                      <af:outputText value="#{row.DEPARTMENT}" id="ot28"/>
-                      <af:outputText value="#{row.ORG_ID}" id="ot29"/>
                     </af:column>
                   </af:table>
                   <af:panelGroupLayout id="pgl23" halign="right"
