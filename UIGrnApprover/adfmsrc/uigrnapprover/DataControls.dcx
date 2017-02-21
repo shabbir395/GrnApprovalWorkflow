@@ -13,7 +13,11 @@
                       xmlns="http://xmlns.oracle.com/adfm/datacontrol">
     <Source>
       <XSDDataControl xmlns="http://xmlns.oracle.com/bpel/workflow/task"
+<<<<<<< HEAD
                       SchemaLocation="file:/D:/J-Dev/GrnApprovalWorkflow/GrnApproval/../GrnApproval/xsd/GrnApproverTaskWorkflowTask.xsd"
+=======
+                      SchemaLocation="file:/D:/J-Dev/GrnApprovalWorkflow/UIGrnApprover/../GrnApproval/xsd/GrnApproverTaskWorkflowTask.xsd"
+>>>>>>> feature_price_column
                       RootElement="task"
                       rootelementnamespace="http://xmlns.oracle.com/bpel/workflow/task"
                       taskLoc="../GrnApproval/GrnApproverTask.task"
