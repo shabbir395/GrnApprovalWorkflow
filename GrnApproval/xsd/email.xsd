@@ -20,6 +20,7 @@
         <xsd:element name="OrganizationCode" type="xsd:decimal"/>
         <xsd:element name="ItemCode" type="xsd:string"/>
         <xsd:element name="PO_NUM" type="xsd:string"/>
+        <xsd:element name="SupplierName" type="xsd:string"/>
       </xsd:sequence>
     </xsd:complexType>
   </xsd:element>
