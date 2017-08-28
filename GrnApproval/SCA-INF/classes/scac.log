@@ -1,86 +1,86 @@
-Apr 13, 2017 1:01:20 PM oracle.mds
+Jul 27, 2017 7:04:00 PM oracle.mds
 NOTIFICATION: PManager instance is created without multitenancy support as JVM flag "oracle.multitenant.enabled" is not set to enable multitenancy support.
-Apr 13, 2017 1:01:20 PM oracle.security.jps.internal.config.xml.XmlConfigurationFactory initDefaultConfiguration
+Jul 27, 2017 7:04:01 PM oracle.security.jps.internal.config.xml.XmlConfigurationFactory initDefaultConfiguration
 SEVERE: java.io.FileNotFoundException: .\config\jps-config.xml (The system cannot find the path specified)
-Apr 13, 2017 1:01:20 PM oracle.mds
+Jul 27, 2017 7:04:01 PM oracle.mds
 NOTIFICATION: Auditing is disabled for component MDS.
-Apr 13, 2017 1:01:21 PM oracle.fabric.common.wsdl.SchemaBuilder resolveWorkFlowSchemas
+Jul 27, 2017 7:04:01 PM oracle.fabric.common.wsdl.SchemaBuilder resolveWorkFlowSchemas
 WARNING: Ignoring composite local workflow schema of file:/D:/J-Dev/GrnApprovalWorkflow/GrnApproval/NotificationService.xsd as there is an MDS shared version of the schema used by workflow engine oramds:/soa/shared/workflow/NotificationService.xsd
-Apr 13, 2017 1:01:21 PM oracle.fabric.common.wsdl.SchemaManager isIncrementalBuildSupported
+Jul 27, 2017 7:04:01 PM oracle.fabric.common.wsdl.SchemaManager isIncrementalBuildSupported
 INFO: XMLSchema incremental build enabled.
-Apr 13, 2017 1:01:21 PM com.collaxa.cube.CubeLogger info
+Jul 27, 2017 7:04:02 PM com.collaxa.cube.CubeLogger info
 INFO: validating "BP_UpdateLineApproved.bpel" ...
-Apr 13, 2017 1:01:21 PM oracle.integration.platform.blocks.FabricConfigManager <clinit>
+Jul 27, 2017 7:04:02 PM oracle.integration.platform.blocks.FabricConfigManager <clinit>
 WARNING: JRF is unable to determine the current application server platform.
-Apr 13, 2017 1:01:21 PM oracle.integration.platform.blocks.WLSPlatformConfigurationProvider <clinit>
+Jul 27, 2017 7:04:02 PM oracle.integration.platform.blocks.WLSPlatformConfigurationProvider <clinit>
 WARNING: JRF is unable to determine the current application server platform.
-Apr 13, 2017 1:01:22 PM com.collaxa.cube.CubeLogger info
-INFO: Composed "BP_UpdateLineApproved" in 54.0 milliseconds [nodes 7=0+7, 129.7 nodes/sec]
-Apr 13, 2017 1:01:26 PM com.collaxa.cube.CubeLogger info
-INFO: Compiled "BP_UpdateLineApproved" in 4.594 seconds
-Apr 13, 2017 1:01:26 PM com.collaxa.cube.CubeLogger info
-INFO: Gathered 3 files in 0.7 milliseconds
+Jul 27, 2017 7:04:02 PM com.collaxa.cube.CubeLogger info
+INFO: Composed "BP_UpdateLineApproved" in 47.8 milliseconds [nodes 7=0+7, 146.4 nodes/sec]
+Jul 27, 2017 7:04:06 PM com.collaxa.cube.CubeLogger info
+INFO: Compiled "BP_UpdateLineApproved" in 3.790 seconds
+Jul 27, 2017 7:04:06 PM com.collaxa.cube.CubeLogger info
+INFO: Gathered 3 files in 0.6 milliseconds
 
-Apr 13, 2017 1:01:26 PM com.collaxa.cube.CubeLogger info
-INFO: Packaged "BP_UpdateLineApproved" in 8.2 milliseconds
+Jul 27, 2017 7:04:06 PM com.collaxa.cube.CubeLogger info
+INFO: Packaged "BP_UpdateLineApproved" in 8.8 milliseconds
 
-Apr 13, 2017 1:01:26 PM com.collaxa.cube.CubeLogger info
+Jul 27, 2017 7:04:06 PM com.collaxa.cube.CubeLogger info
 INFO: validating "BPELProcessUpdateProcessLineFlag.bpel" ...
-Apr 13, 2017 1:01:26 PM com.collaxa.cube.CubeLogger info
-INFO: Composed "BPELProcessUpdateProcessLineFlag" in 13.9 milliseconds [nodes 7=0+7, 502.6 nodes/sec]
-Apr 13, 2017 1:01:30 PM com.collaxa.cube.CubeLogger info
-INFO: Compiled "BPELProcessUpdateProcessLineFlag" in 3.926 seconds
-Apr 13, 2017 1:01:30 PM com.collaxa.cube.CubeLogger info
-INFO: Gathered 3 files in 0.6 milliseconds
-
-Apr 13, 2017 1:01:30 PM com.collaxa.cube.CubeLogger info
-INFO: Packaged "BPELProcessUpdateProcessLineFlag" in 6.4 milliseconds
-
-Apr 13, 2017 1:01:30 PM com.collaxa.cube.CubeLogger info
-INFO: validating "BP_UpdateLineDisApp.bpel" ...
-Apr 13, 2017 1:01:30 PM com.collaxa.cube.CubeLogger info
-INFO: Composed "BP_UpdateLineDisApp" in 11.4 milliseconds [nodes 7=0+7, 611.7 nodes/sec]
-Apr 13, 2017 1:01:34 PM com.collaxa.cube.CubeLogger info
-INFO: Compiled "BP_UpdateLineDisApp" in 3.871 seconds
-Apr 13, 2017 1:01:34 PM com.collaxa.cube.CubeLogger info
-INFO: Gathered 3 files in 0.6 milliseconds
-
-Apr 13, 2017 1:01:34 PM com.collaxa.cube.CubeLogger info
-INFO: Packaged "BP_UpdateLineDisApp" in 7.3 milliseconds
-
-Apr 13, 2017 1:01:34 PM com.collaxa.cube.CubeLogger info
-INFO: validating "BPEL_ResetLineProcessedFlag.bpel" ...
-Apr 13, 2017 1:01:34 PM com.collaxa.cube.CubeLogger info
-INFO: Composed "BPEL_ResetLineProcessedFlag" in 11.2 milliseconds [nodes 7=0+7, 626.4 nodes/sec]
-Apr 13, 2017 1:01:38 PM com.collaxa.cube.CubeLogger info
-INFO: Compiled "BPEL_ResetLineProcessedFlag" in 3.830 seconds
-Apr 13, 2017 1:01:38 PM com.collaxa.cube.CubeLogger info
-INFO: Gathered 3 files in 0.6 milliseconds
-
-Apr 13, 2017 1:01:38 PM com.collaxa.cube.CubeLogger info
-INFO: Packaged "BPEL_ResetLineProcessedFlag" in 6.3 milliseconds
-
-Apr 13, 2017 1:01:43 PM com.collaxa.cube.CubeLogger info
-INFO: validating "BPELProcessSaveApprover.bpel" ...
-Apr 13, 2017 1:01:43 PM com.collaxa.cube.CubeLogger info
-INFO: Composed "BPELProcessSaveApprover" in 12.3 milliseconds [nodes 7=0+7, 567.1 nodes/sec]
-Apr 13, 2017 1:01:47 PM com.collaxa.cube.CubeLogger info
-INFO: Compiled "BPELProcessSaveApprover" in 3.850 seconds
-Apr 13, 2017 1:01:47 PM com.collaxa.cube.CubeLogger info
+Jul 27, 2017 7:04:06 PM com.collaxa.cube.CubeLogger info
+INFO: Composed "BPELProcessUpdateProcessLineFlag" in 10.3 milliseconds [nodes 7=0+7, 677.2 nodes/sec]
+Jul 27, 2017 7:04:09 PM com.collaxa.cube.CubeLogger info
+INFO: Compiled "BPELProcessUpdateProcessLineFlag" in 2.743 seconds
+Jul 27, 2017 7:04:09 PM com.collaxa.cube.CubeLogger info
 INFO: Gathered 3 files in 0.7 milliseconds
 
-Apr 13, 2017 1:01:47 PM com.collaxa.cube.CubeLogger info
-INFO: Packaged "BPELProcessSaveApprover" in 6.3 milliseconds
+Jul 27, 2017 7:04:09 PM com.collaxa.cube.CubeLogger info
+INFO: Packaged "BPELProcessUpdateProcessLineFlag" in 5.4 milliseconds
 
-Apr 13, 2017 1:01:47 PM com.collaxa.cube.CubeLogger info
+Jul 27, 2017 7:04:09 PM com.collaxa.cube.CubeLogger info
+INFO: validating "BP_UpdateLineDisApp.bpel" ...
+Jul 27, 2017 7:04:09 PM com.collaxa.cube.CubeLogger info
+INFO: Composed "BP_UpdateLineDisApp" in 8.3 milliseconds [nodes 7=0+7, 841.1 nodes/sec]
+Jul 27, 2017 7:04:12 PM com.collaxa.cube.CubeLogger info
+INFO: Compiled "BP_UpdateLineDisApp" in 2.882 seconds
+Jul 27, 2017 7:04:12 PM com.collaxa.cube.CubeLogger info
+INFO: Gathered 3 files in 0.8 milliseconds
+
+Jul 27, 2017 7:04:12 PM com.collaxa.cube.CubeLogger info
+INFO: Packaged "BP_UpdateLineDisApp" in 5.8 milliseconds
+
+Jul 27, 2017 7:04:12 PM com.collaxa.cube.CubeLogger info
+INFO: validating "BPEL_ResetLineProcessedFlag.bpel" ...
+Jul 27, 2017 7:04:12 PM com.collaxa.cube.CubeLogger info
+INFO: Composed "BPEL_ResetLineProcessedFlag" in 8.9 milliseconds [nodes 7=0+7, 786.2 nodes/sec]
+Jul 27, 2017 7:04:15 PM com.collaxa.cube.CubeLogger info
+INFO: Compiled "BPEL_ResetLineProcessedFlag" in 2.681 seconds
+Jul 27, 2017 7:04:15 PM com.collaxa.cube.CubeLogger info
+INFO: Gathered 3 files in 0.5 milliseconds
+
+Jul 27, 2017 7:04:15 PM com.collaxa.cube.CubeLogger info
+INFO: Packaged "BPEL_ResetLineProcessedFlag" in 6.0 milliseconds
+
+Jul 27, 2017 7:04:19 PM com.collaxa.cube.CubeLogger info
+INFO: validating "BPELProcessSaveApprover.bpel" ...
+Jul 27, 2017 7:04:19 PM com.collaxa.cube.CubeLogger info
+INFO: Composed "BPELProcessSaveApprover" in 8.4 milliseconds [nodes 7=0+7, 832.8 nodes/sec]
+Jul 27, 2017 7:04:22 PM com.collaxa.cube.CubeLogger info
+INFO: Compiled "BPELProcessSaveApprover" in 2.758 seconds
+Jul 27, 2017 7:04:22 PM com.collaxa.cube.CubeLogger info
+INFO: Gathered 3 files in 0.5 milliseconds
+
+Jul 27, 2017 7:04:22 PM com.collaxa.cube.CubeLogger info
+INFO: Packaged "BPELProcessSaveApprover" in 5.3 milliseconds
+
+Jul 27, 2017 7:04:22 PM com.collaxa.cube.CubeLogger info
 INFO: validating "BPEmail.bpel" ...
-Apr 13, 2017 1:01:47 PM com.collaxa.cube.CubeLogger info
-INFO: Composed "BPEmail" in 23.9 milliseconds [nodes 16=1+15, 670.5 nodes/sec]
-Apr 13, 2017 1:01:51 PM com.collaxa.cube.CubeLogger info
-INFO: Compiled "BPEmail" in 4.215 seconds
-Apr 13, 2017 1:01:51 PM com.collaxa.cube.CubeLogger info
-INFO: Gathered 5 files in 0.6 milliseconds
+Jul 27, 2017 7:04:22 PM com.collaxa.cube.CubeLogger info
+INFO: Composed "BPEmail" in 17.1 milliseconds [nodes 16=1+15, 938.0 nodes/sec]
+Jul 27, 2017 7:04:25 PM com.collaxa.cube.CubeLogger info
+INFO: Compiled "BPEmail" in 3.068 seconds
+Jul 27, 2017 7:04:25 PM com.collaxa.cube.CubeLogger info
+INFO: Gathered 5 files in 0.5 milliseconds
 
-Apr 13, 2017 1:01:51 PM com.collaxa.cube.CubeLogger info
-INFO: Packaged "BPEmail" in 8.6 milliseconds
+Jul 27, 2017 7:04:25 PM com.collaxa.cube.CubeLogger info
+INFO: Packaged "BPEmail" in 6.8 milliseconds
 
